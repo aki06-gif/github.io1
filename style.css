@@ -1,0 +1,957 @@
+@charset "utf-8";
+.hero {
+  width: 100%;
+  min-height: 800px;
+  background: url("img/section-hero/hero-pc.jpg") no-repeat top left / cover;
+}
+.hero__wrapper {
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: 0 10%;
+}
+.hero__logo {
+  width: 142px;
+  margin: 20px 0 -20px;
+}
+.hero__title {
+  color: #1fc2ed;
+  width: 52%;
+  max-width: 750px;
+  min-width: 476px;
+  transform: rotate(-0.04turn);
+  margin: 0px;
+}
+.hero__title__h1 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-size: 4.2rem;
+  line-height: 1;
+  font-weight: 700;
+}
+.hero__title__initials {
+  font-size: 10.2rem;
+  line-height: 0px;
+  font-weight: 700;
+}
+.hero__title p {
+  margin: 0px;
+}
+.hero__title__h2 {
+  margin-top: -10px;
+}
+.hero__title__h2--upper, .hero__title__h2--Under {
+  background-color: #fcff00;
+  padding: 20px 40px;
+  text-align: center;
+}
+.hero__title__h2--upper {
+  font-size: 2.7rem;
+  margin: 0 0 10px 0;
+  line-height: 4rem;
+}
+.hero__title__h2--Under {
+  font-size: 3.5rem;
+  line-height: 5.2rem;
+}
+.hero__btn {
+  margin: 150px 0 70px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.hero__btn--pink {
+  flex-basis: 59%;
+}
+.hero__btn--orange {
+  flex-basis: 37%;
+}
+/*バナーセクション*/
+.banner {
+  width: 100%;
+  background: url("img/section-bunner/pc-banner-backgroundpsd.png") no-repeat center / cover;
+  padding: 60px 1.1%;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner__wrapper {
+  width: 89.6%;
+  max-width: 1004px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.bunner__image__wrapper {
+  margin-bottom: 40px;
+}
+.purpose {
+  margin-top: 30px;
+}
+.bunner__image {
+  width: 100%;
+}
+.banner__explanation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner__explanation__title {
+  flex-basis: 23%;
+  min-width: 224px;
+  display: flex;
+}
+.banner__explanation__title__text {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.banner__explanation__text {
+  flex-basis: 75%;
+}
+.banner__explanation__title__yellow {
+  color: #fcff00;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin: 5px 0;
+}
+.banner__explanation__title__white {
+  color: #FFFFFF;
+  font-size: 2.8rem;
+  line-height: 4.2rem;
+  margin: 0;
+}
+.banner__explanation__text {
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.reason-wrapper__content {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 15px;
+}
+.reason-wrapper__content li {
+  flex-basis: 5%;
+  max-width: 150px;
+  color: #ffffff;
+}
+.reason-wrapper__content li:nth-child(odd) {
+  flex-basis: 18%;
+  max-width: 150px;
+}
+.reason-wrapper__content li img {
+  width: 100%;
+}
+.reason-wrapper__content li:last-child {
+  flex-basis: 30%;
+  font-size: 26px;
+  line-height: 3.4rem;
+  padding: 50px;
+  text-align: center;
+  background: url("img/section-bunner/circle-pink.png") no-repeat center / contain;
+}
+.reason-wrapper__content__text {
+  color: #FFFFFF;
+}
+.reason-wrapper__content__text span {
+  color: #fcff00;
+  font-size: 2.2rem;
+}
+.purpose__title__yellow br {
+  display: none;
+}
+.purpose__title__yellow {
+  color: #fcff00;
+  font-size: 3.0rem;
+}
+.purpose__title__yellowtext {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.purpose__title__white {
+  color: #FFFFFF;
+  font-size: 4.0rem;
+}
+.purpose__content ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  max-width: 1120px;
+  margin-top: 60px;
+}
+.purpose__content ul li {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+  width: calc(35% - 3%);
+  background-color: #ffffff;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.purpose__content__image {
+  flex-basis: 35%;
+}
+.purpose__content ul img {
+  width: 100%;
+}
+.purpose__content ul li p {
+  flex-basis: 58.3%;
+  line-height: 4.0rem;
+}
+.purpose__content__text span {
+  color: #FF689A;
+}
+.purpose__content__text {
+  font-size: 1.6rem;
+}
+.purpose__content__text__nomal {
+  font-size: 2.0rem;
+}
+.purpose__content__text__emphasis {
+  font-size: 3.0rem;
+}
+/*悩みセクション*/
+.worries {
+  width: 100%;
+}
+ul li.worries__item {
+  width: 100%;
+  background-color: #F4F6F8;
+  padding-bottom: 50px;
+}
+ul li.worries__item:nth-child(even) {
+  width: 100%;
+  background-color: #FFFFFF;
+  padding-bottom: 50px;
+}
+.worries__item__first-area__wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.worries__item__first-area {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 0 0 auto;
+}
+.worries__item__first-area--odd {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0;
+}
+/*main-image*/
+.worries__main-image--stomach, .worries__main-image--shoulder, .worries__main-image--waist, .worries__main-image--hunched-back, .worries__main-image--cold, .worries__main-image--fat {
+  background: no-repeat center / cover;
+  min-height: 600px;
+  width: 50%;
+  flex-basis: 47.6%;
+}
+.worries__main-image--stomach {
+  background-image: url("img/section-worries/main-img/worries-stomachx1.png");
+}
+.worries__main-image--stomach-mobile {
+  display: none;
+}
+.worries__item__first-area__text__wrapper {
+  flex-basis: 49%;
+}
+.worries__item__first-area__text {
+  font-size: 2.8rem;
+}
+.worries__item__first-area__text__pink {
+  color: #FFFFFF;
+  background-color: #FF689A;
+  border-radius: 10px;
+  font-size: 3.0rem;
+  padding: 15px 30px 10px 30px;
+  margin-right: 10px;
+}
+.mobole {
+  display: none;
+}
+.worries__item__first-area__text__emphasis {
+  font-size: 4.0rem;
+}
+.worries__item__first-area__text__cyan {
+  color: #22C0E8;
+  font-size: 4.0rem;
+  border-bottom: solid 20px #FCFF00;
+}
+.worries__item__first-area__explanation {
+  margin-top: 50px;
+  line-height: 1.5;
+}
+.worries__item__first-area__textflame {
+  background-color: #ffffff;
+  border: solid 1px #948E8E;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin: 30px 0 40px 0;
+  padding: 27px 0;
+  font-size: 2.2rem;
+  border-radius: 10px;
+  align-items: center;
+}
+.worries__item__first-area__textflame h5 {
+  color: #22C0E8;
+  flex-basis: 30%;
+  border-bottom: dotted 3px #22C0E8;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.worries__item__first-area__textflame__left {
+  flex-basis: 50%;
+}
+.worries__item__first-area__textflame__left__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.worries__item__first-area__textflame__left__item p {
+  padding-left: 5%;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+.worries__item__first-area__textflame__left__item:last-child {
+  padding-bottom: 0;
+}
+.worries__item__second-area {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.worries__ribbon-image {
+  text-align: center;
+  margin-top: -80px;
+}
+.worries__item__second-area__training {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.worries__item__second-area__training__item {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  flex-basis: 30.8%;
+}
+.worries__item__second-area__training__item__image {
+  flex-basis: 52.1%;
+  filter: drop-shadow(0px 4px 4px #858383);
+}
+.worries__item__second-area__training__item__text {
+  flex-basis: 43.4%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+/*アブドミナル(p)をdivで囲んでdivの高さの真ん中にpを持ってくる*/
+.worries__item__second-area__training__item__text__table {
+  height: 48px;
+  display: table;
+  margin-bottom: 20px;
+}
+.worries__item__second-area__training__item__text--main {
+  font-size: 2.2rem;
+  display: table-cell;
+  vertical-align: middle;
+}
+.worries__item__second-area__training__item__text--sub {
+  font-size: 1.6rem;
+}
+.worries__item__third-area {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.worries__item__third-area__btn {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 50px;
+}
+.worries__item__third-area__btn--pink {
+  flex-basis: 59%;
+}
+.worries__item__third-area__btn--orange {
+  flex-basis: 37%;
+}
+/*肩こり*/
+.worries__main-image--shoulder {
+  background-image: url("img/section-worries/main-img/worries-shoulderx1.png");
+}
+/*腰痛*/
+.worries__main-image--waist {
+  background-image: url("img/section-worries/main-img/worries-weistx1.png");
+}
+/*猫背*/
+.worries__main-image--hunched-back {
+  background-image: url("img/section-worries/main-img/worries-hunched-backx1.png");
+}
+/*冷え・むくみ*/
+.worries__main-image--cold {
+  background-image: url("img/section-worries/main-img/worries-coldx1.png")
+}
+/*下半身太り*/
+.worries__main-image--fat {
+  background-image: url("img/section-worries/main-img/worries-fatx1.png");
+}
+/*フローセクション*/
+.flow {
+  background-color: #ECFBFF;
+  padding: 60px 0;
+}
+.flow__title__main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.flow__title__main--yellow {
+  font-size: 2.6rem;
+  line-height: 1;
+  color: #22C0E8;
+  background-color: #FCFF00;
+  padding: 5px 10px;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+.flow__title__main--cyan {
+  font-size: 4.0rem;
+  line-height: 1;
+  color: #22C0E8;
+  text-align: center;
+  vertical-align: middle;
+}
+.flow__title__sub {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 10px;
+}
+.flow__item__wrapper {
+  width: 100%;
+  max-width: 1120px;
+  margin: 70px auto 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ここからSTEPの画像と文字の位置調整 */
+.flow__item__wrapper__step {
+  position: relative;
+  max-width: 86px;
+  margin: auto 0;
+}
+.flow__item__wrapper__step img {
+  width: 100%; /* divの幅に対する割合 */
+}
+.flow__item__wrapper__step--number {
+  color: #fff;
+  font-size: 1.6rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* ここから文字との水色フレームの位置調整 */
+.flow__item__wrapper__text {
+  position: relative;
+  max-width: 160px;
+  margin: 0 auto;
+}
+.flow__item__wrapper__text img {
+  width: 100%; /* divの幅に対する割合 */
+}
+.flow__item__wrapper__text--content {
+  color: #fff;
+  font-size: 1.6rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100px;
+}
+/* ここからSTEPフレームと水色フレーム位置調整 */
+.flow__item__wrapper__outer {
+  position: relative;
+}
+.flow__item__wrapper__text {
+  width: 100%; /* divの幅に対する割合 */
+  z-index: 5;
+}
+.flow__item__wrapper__step {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-30%, -50%);
+  z-index: 10;
+}
+.flow__bring {
+  width: 100%;
+  max-width: 1120px;
+  margin: 50px auto 0;
+}
+.flow__bring__title {
+  font-size: 2.0rem;
+  font-weight: 600;
+  text-align: left;
+  color: #018FC3;
+}
+.flow__bring__content {
+  margin: 20px 0 50px;
+}
+/**/
+.flow__bring ul li {
+  list-style-position: inside;
+}
+.flow__bring__content li {
+  list-style: url("img/section-flow/circlex1.png");
+  font-size: 1.6rem;
+}
+.flow__banner {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.flow__btn {
+  margin: 50px 0 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.flow__btn--pink {
+  flex-basis: 59%;
+}
+.flow__btn--orange {
+  flex-basis: 37%;
+}
+.footer {
+  text-align: center;
+}
+.footer small {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 65px 0 15px;
+}
+/*ここからmobile*/
+@media (max-width: 600px) {
+  .hero {
+    width: 100%;
+    min-height: 358px;
+    background: url("img/section-hero/mobile/hero-mobilex2.png") no-repeat center/ cover;
+  }
+  .hero__wrapper {
+    margin: 0 auto;
+    max-width: 390px;
+    padding: 0 4.1%;
+    position: relative;
+  }
+  .hero__logo {
+    width: 70px;
+    margin: 20px 0 -20px;
+  }
+  .hero__title {
+    color: #1fc2ed;
+    width: 30%;
+    max-width: 285px;
+    min-width: 280px;
+    transform: rotate(-0.03turn);
+    margin: 0px;
+    position: absolute;
+    top: 200px;
+    left: 73px;
+  }
+  .hero__title__h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2.2rem;
+    line-height: 1;
+    font-weight: 700;
+  }
+  .hero__title__initials {
+    font-size: 4.8rem;
+    line-height: 0px;
+    font-weight: 700;
+  }
+  .hero__title p {
+    margin: 0px;
+  }
+  .hero__title__h2 {
+    margin-top: -10px;
+  }
+  .hero__title__h2 h2 {
+    background-color: #fcff00;
+    padding: 6px 20px;
+    text-align: center;
+  }
+  .hero__title__h2--upper {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin: 8px 0 3px 0;
+  }
+  .hero__title__h2--Under {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    margin-top: 0px;
+  }
+  .hero__btn {
+    display: none;
+  }
+  /*バナーセクション*/
+  .banner {
+    background: url("img/section-bunner/mobile-backgroundx2 .png") no-repeat center / cover;
+    padding: 20px 0 4.1%;
+  }
+  .banner__wrapper {
+    width: 91.8%;
+    max-width: 358px;
+    display: flex;
+    flex-direction: column;
+  }
+  .bunner__image__wrapper {
+    margin-bottom: 30px;
+  }
+  .bunner__image {
+    width: 100%;
+  }
+  .banner__explanation {
+    flex-flow: column nowrap;
+  }
+  .banner__explanation__title {
+    margin-bottom: 20px;
+  }
+  .reason-wrapper__content {
+    flex-flow: column nowrap;
+    margin-top: 40px;
+  }
+  .reason-wrapper__content li {
+    max-width: 50px;
+    margin-bottom: 20px;
+  }
+  .reason-wrapper__content li:nth-child(odd) {
+    max-width: 150px;
+  }
+  .reason-wrapper__content li img {
+    width: 100%;
+  }
+  .reason-wrapper__content li:nth-child(6) {
+    transform: rotate(90deg);
+    transform-origin: center center;
+  }
+  .reason-wrapper__content li:last-child {
+    flex-basis: 30%;
+    font-size: 26px;
+    line-height: 3.4rem;
+    padding: 50px;
+    text-align: center;
+    background: url("img/section-bunner/circle-pink.png") no-repeat center / contain;
+  }
+  .reason-wrapper__content__text {
+    color: #FFFFFF;
+  }
+  .reason-wrapper__content__text span {
+    color: #fcff00;
+    font-size: 2.2rem;
+  }
+  .purpose__title__yellowtext {
+    justify-content: space-between;
+  }
+  .purpose__title__yellowtext img {
+    max-width: 20px;
+  }
+  .purpose__title__yellow {
+    font-size: 2.0rem;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  .purpose__title__white {
+    font-size: 2.8rem;
+    margin-top: 10px;
+  }
+  .purpose__content ul {
+    flex-flow: column nowrap;
+    max-width: 310px;
+    margin: 50px auto;
+  }
+  .purpose__content ul li {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .purpose__content__image {
+    flex-basis: 35%;
+  }
+  .purpose__content ul img {
+    width: 100%;
+  }
+  .purpose__content ul li p {
+    flex-basis: 58.3%;
+    line-height: 4.0rem;
+  }
+  .purpose__content__text span {
+    color: #FF689A;
+  }
+  .purpose__content__text__nomal {
+    font-size: 2.0rem;
+  }
+  .purpose__content__text__emphasis {
+    font-size: 3.0rem;
+  }
+  /*悩みセクション*/
+  .worries {
+    width: 100%;
+  }
+  ul li.worries__item {
+    width: 100%;
+    background-color: #F4F6F8;
+    padding-bottom: 20px;
+  }
+  ul li.worries__item:nth-child(even) {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding-bottom: 0px;
+  }
+  .worries__item__first-area__wrapper {
+    max-width: 390px;
+  }
+  .worries__item__first-area, .worries__item__first-area--odd {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 390px;
+    margin: 0 auto;
+  }
+  /*main-image*/
+  .worries__main-image--stomach-mobile, .worries__main-image--shoulder-mobile, .worries__main-image--waist-mobile, .worries__main-image--hunched-back-mobile, .worries__main-image--cold-mobile, .worries__main-image--fat-mobile {
+    display: block;
+    background: no-repeat center / cover;
+    min-height: 238px;
+  }
+  .worries__main-image--stomach-mobile {
+    background-image: url("img/section-worries/main-img-mobile/worries-stomachx2.png");
+  }
+  /*肩こり*/
+  .worries__main-image--shoulder-mobile {
+    background-image: url("img/section-worries/main-img-mobile/worries-shoulderx2.png");
+  }
+  /*腰痛*/
+  .worries__main-image--waist-mobile {
+    background-image: url("img/section-worries/main-img-mobile/worries-weistx2.png");
+  }
+  /*猫背*/
+  .worries__main-image--hunched-back-mobile {
+    background-image: url("img/section-worries/main-img-mobile/worries-hunched-backx2.png");
+  }
+  /*冷え・むくみ*/
+  .worries__main-image--cold-mobile {
+    background-image: url("img/section-worries/main-img-mobile/worries-coldx2.png")
+  }
+  /*下半身太り*/
+  .worries__main-image--fat-mobile {
+    background-image: url("img/section-worries/main-img-mobile/worries-fatx2.png");
+  }
+  .worries__main-image--stomach, .worries__main-image--shoulder, .worries__main-image--waist, .worries__main-image--hunched-back, .worries__main-image--cold, .worries__main-image--fat {
+    display: none;
+  }
+  .worries__item__first-area__text {
+    font-size: 3.0rem;
+    text-align: center;
+  }
+  .mobole {
+    display: inline;
+  }
+  .worries__item__first-area__text__pink {
+    font-size: 3.0rem;
+    padding: 10px 30px 5px;
+    line-height: 2.5;
+  }
+  .worries__item__first-area__text__emphasis {
+    font-size: 4.0rem;
+  }
+  .worries__item__first-area__text__cyan {
+    font-size: 4.0rem;
+    border-bottom: solid 13px #FCFF00;
+    display: inline-block;
+  }
+  .worries__item__first-area__explanation {
+    max-width: 91.8%;
+    text-align: left;
+    margin: 20px auto 0;
+  }
+  .worries__item__first-area__textflame {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    max-width: 91.8%;
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px 0;
+    font-size: 1.8rem;
+  }
+  .worries__item__first-area__textflame h5 {
+    flex-basis: 100%;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+  }
+  .worries__item__first-area__textflame__left__item {
+    min-width: 259px;
+    text-align: left;
+    margin: 0 auto;
+    padding-bottom: 0px;
+    line-height: 1.5;
+  }
+  .worries__item__second-area {
+    width: 100%;
+    max-width: 358px;
+    margin: 30px auto;
+  }
+  .worries__ribbon-image {
+    text-align: center;
+    margin-top: 0px;
+    max-width: 358px;
+  }
+  .worries__ribbon-image img {
+    width: 100%;
+  }
+  .worries__item__second-area__training {
+    width: 100%;
+    max-width: 358px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 20px;
+  }
+  .worries__item__second-area__training__item {
+    justify-content: space-between;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .worries__item__second-area__training__item__image {
+    flex-basis: 41.8%;
+    filter: drop-shadow(0px 4px 4px #858383);
+  }
+  .worries__item__second-area__training__item__image img {
+    width: 100%;
+  }
+  .worries__item__second-area__training__item__text {
+    flex-basis: 41.8%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  /*アブドミナル(p)をdivで囲んでdivの高さの真ん中にpを持ってくる(PCに記載)*/
+  .worries__item__second-area__training__item__text__table {
+    margin-bottom: 10px;
+  }
+  .worries__item__second-area__training__item__text--main {
+    font-size: 2.0rem;
+  }
+  .worries__item__third-area {
+    display: none;
+  }
+  /*フローセクション*/
+  .flow {
+    padding: 50px 0;
+  }
+  .flow__title {
+    width: 91.8%;
+    max-width: 358px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .flow__title__main {
+    flex-flow: column nowrap;
+  }
+  .flow__title__main--yellow {
+    font-size: 2.2rem;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .flow__title__main--cyan {
+    font-size: 2.8rem;
+  }
+  .flow__title__sub {
+    max-width: 358px;
+    text-align: left;
+    margin-top: 15px;
+  }
+  .flow__item__wrapper {
+    width: 47.7%;
+    max-width: 186px;
+    margin: 70px auto 0;
+    flex-flow: column nowrap;
+  }
+  .flow__item__wrapper li {
+    margin-bottom: 10px;
+  }
+  .flow__item__wrapper li:nth-child(even) {
+    transform: rotate(90deg);
+  }
+  .flow__bring {
+    width: 91.8%;
+    max-width: 385px;
+    margin: 50px auto 0;
+  }
+  .flow__bring__title {
+    font-size: 2.0rem;
+    font-weight: 600;
+    text-align: left;
+    color: #018FC3;
+  }
+  .flow__bring__content {
+    margin: 20px 0 50px;
+  }
+  /**/
+  .flow__bring ul li {
+    list-style-position: inside;
+  }
+  .flow__bring__content li {
+    list-style: url("img/section-flow/circlex1.png");
+    font-size: 1.6rem;
+  }
+  .flow__banner {
+    width: 100%;
+    max-width: 385px;
+    text-align: center;
+    margin: 0 auto 50px;
+  }
+  .flow__banner img {
+    width: 100%;
+  }
+  .flow__btn {
+    display: none;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer small {
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 65px 0 15px;
+  }
+}
