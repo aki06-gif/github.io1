@@ -688,6 +688,9 @@ ul li.worries__item:nth-child(even) {
     line-height: 1.5;
     font-weight: 500;
   }
+   .purpose__title__yellow br{
+  display: block;
+  }
   .purpose__title__white {
     font-size: 2.8rem;
     margin-top: 10px;
