@@ -7,12 +7,20 @@
 .hero__wrapper {
   margin: 0 auto;
   max-width: 1120px;
-  padding: 0 10%;
+  padding: 0 11%;
 }
 .hero__logo {
   width: 142px;
   margin: 20px 0 -20px;
 }
+.hero__title{
+width: 60%;
+padding-top: 50px;
+}
+.hero__title img{
+width: 100%;
+}
+  /*
 .hero__title {
   color: #1fc2ed;
   width: 52%;
@@ -37,25 +45,36 @@
 .hero__title p {
   margin: 0px;
 }
-.hero__title__h2 {
+.hero__title {
   margin-top: -10px;
 }
-.hero__title__h2--upper, .hero__title__h2--Under {
+.hero__title--upper, .hero__title--Under {
   background-color: #fcff00;
   padding: 20px 40px;
   text-align: center;
 }
-.hero__title__h2--upper {
+.hero__title--upper {
   font-size: 2.7rem;
   margin: 0 0 10px 0;
   line-height: 4rem;
 }
-.hero__title__h2--Under {
+.hero__title--Under {
   font-size: 3.5rem;
   line-height: 5.2rem;
 }
+*/
+/*ボタンの表示設定:100%*//*ホバー時の変わる時間:0.3s*/
+img.hero__btn--pink, .hero__btn--orange, .worries__item__third-area__btn--pink, .worries__item__third-area__btn--orange,.flow__btn--pink,.flow__btn--orange{
+  width: 100%;
+  transition: 0.3s;
+}
+/*ホバー時の設定。0：黒、１：通常の明るさ*/
+.hero__btn--orange img:hover,.hero__btn--pink img:hover,.worries__item__third-area__btn--pink img:hover , .worries__item__third-area__btn--orange img:hover,.flow__btn--pink img:hover,.flow__btn--orange img:hover{
+ filter: brightness(0.8);
+}
+
 .hero__btn {
-  margin: 150px 0 70px;
+  padding: 100px 0 70px 0;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -63,14 +82,16 @@
 .hero__btn--pink {
   flex-basis: 59%;
 }
+
 .hero__btn--orange {
   flex-basis: 37%;
 }
+
 /*バナーセクション*/
 .banner {
   width: 100%;
   background: url("img/section-bunner/pc-banner-backgroundpsd.png") no-repeat center / cover;
-  padding: 60px 1.1%;
+  padding: 60px 0%;
   margin: 0 auto;
   text-align: center;
 }
@@ -219,36 +240,44 @@
 .worries {
   width: 100%;
 }
-ul li.worries__item {
+.worries__item {
   width: 100%;
   background-color: #F4F6F8;
-  padding-bottom: 50px;
+  padding: 0 0 50px;
 }
-ul li.worries__item:nth-child(even) {
+/*奇数の背景の色を変更するする*/
+.worries__item:nth-child(even) {
   width: 100%;
   background-color: #FFFFFF;
-  padding-bottom: 50px;
+  padding: 0 0 50px;
 }
-.worries__item__first-area__wrapper {
+.worries__item__container {
   width: 100%;
   max-width: 1440px;
+  text-align: center;
   margin: 0 auto;
-}
+} 
+/*<!--ファーストエリアの幅指定　右寄せ（親要素1440px内で右寄せ）-->*/
 .worries__item__first-area {
+  width: 88.9%;
+  max-width: 1280px;
+  margin: 0 0 0 auto;
+  text-align: left;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  max-width: 1280px;
-  margin: 0 0 0 auto;
 }
+/*2.4.6番目のファーストエリアの写真とテキストを反対にする、幅指定　左寄せ*/
 .worries__item__first-area--odd {
+  width: 88.9%;
+  max-width: 1280px;
   display: flex;
   flex-flow: row-reverse nowrap;
   justify-content: space-between;
   align-items: center;
-  max-width: 1280px;
   margin: 0;
+  text-align: left;
 }
 /*main-image*/
 .worries__main-image--stomach, .worries__main-image--shoulder, .worries__main-image--waist, .worries__main-image--hunched-back, .worries__main-image--cold, .worries__main-image--fat {
@@ -260,6 +289,26 @@ ul li.worries__item:nth-child(even) {
 .worries__main-image--stomach {
   background-image: url("img/section-worries/main-img/worries-stomachx1.png");
 }
+/*肩こり*/
+.worries__main-image--shoulder {
+  background-image: url("img/section-worries/main-img/worries-shoulderx1.png");
+}
+/*腰痛*/
+.worries__main-image--waist {
+  background-image: url("img/section-worries/main-img/worries-weistx1.png");
+}
+/*猫背*/
+.worries__main-image--hunched-back {
+  background-image: url("img/section-worries/main-img/worries-hunched-backx1.png");
+}
+/*冷え・むくみ*/
+.worries__main-image--cold {
+  background-image: url("img/section-worries/main-img/worries-coldx1.png")
+}
+/*下半身太り*/
+.worries__main-image--fat {
+  background-image: url("img/section-worries/main-img/worries-fatx1.png");
+}
 .worries__main-image--stomach-mobile {
   display: none;
 }
@@ -268,6 +317,7 @@ ul li.worries__item:nth-child(even) {
 }
 .worries__item__first-area__text {
   font-size: 2.8rem;
+  line-height: 2;
 }
 .worries__item__first-area__text__pink {
   color: #FFFFFF;
@@ -292,11 +342,12 @@ ul li.worries__item:nth-child(even) {
   margin-top: 50px;
   line-height: 1.5;
 }
+/*チェックボックスがあるフレーム内の記述*/
 .worries__item__first-area__textflame {
   background-color: #ffffff;
   border: solid 1px #948E8E;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row nowrap;/*「こんな方に」とチェックボックス付きテキストを横並び*/
   justify-content: space-around;
   margin: 30px 0 40px 0;
   padding: 27px 0;
@@ -304,32 +355,48 @@ ul li.worries__item:nth-child(even) {
   border-radius: 10px;
   align-items: center;
 }
-.worries__item__first-area__textflame h5 {
+.worries__item__first-area__textflame__right {
   color: #22C0E8;
-  flex-basis: 30%;
+  flex-basis: 29%;
   border-bottom: dotted 3px #22C0E8;
   padding-bottom: 10px;
   text-align: center;
 }
+
 .worries__item__first-area__textflame__left {
-  flex-basis: 50%;
+  flex-basis: 55.2%;
 }
-.worries__item__first-area__textflame__left__item {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-bottom: 10px;
+/*ここから左のチェックボックス*/
+.worries__item__first-area__textflame__left__item{
+display: flex;/*チェックボックスとテキストを横並び*/
+justify-content: flex-start;
+margin-bottom: 3%;
+}
+.worries__item__first-area__textflame__left__item:last-child{
+margin-bottom: 0px;
+}
+.worries__item__first-area__textflame__left__item-checkbox{
+background-image: url("img/section-worries/checkbox×2.png");
+background-repeat: no-repeat;
+flex-basis: 10%;
+background-size: contain;
+margin-right: 2%;/*チェックボックスとテキストの間隔*/
+
+}
+.worries__item__first-area__textflame__left p{
+flex-basis: 70%;
+
 }
 .worries__item__first-area__textflame__left__item p {
-  padding-left: 5%;
   font-size: 1.6rem;
-  line-height: 1;
+  line-height: 1.5;
 }
+
 .worries__item__first-area__textflame__left__item:last-child {
   padding-bottom: 0;
 }
 .worries__item__second-area {
-  width: 100%;
+  width: 77.8%;
   max-width: 1120px;
   margin: 0 auto;
 }
@@ -339,8 +406,6 @@ ul li.worries__item:nth-child(even) {
 }
 .worries__item__second-area__training {
   width: 100%;
-  max-width: 1120px;
-  margin: 0 auto;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -355,6 +420,9 @@ ul li.worries__item:nth-child(even) {
 .worries__item__second-area__training__item__image {
   flex-basis: 52.1%;
   filter: drop-shadow(0px 4px 4px #858383);
+}
+.worries__item__second-area__training__item__image img{
+width: 100%;
 }
 .worries__item__second-area__training__item__text {
   flex-basis: 43.4%;
@@ -373,12 +441,16 @@ ul li.worries__item:nth-child(even) {
   font-size: 2.2rem;
   display: table-cell;
   vertical-align: middle;
+  text-align: left;
+  line-height: 1.5;
 }
 .worries__item__second-area__training__item__text--sub {
   font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: left;
 }
 .worries__item__third-area {
-  width: 100%;
+  width: 77.8%;
   max-width: 1120px;
   margin: 0 auto;
 }
@@ -395,30 +467,17 @@ ul li.worries__item:nth-child(even) {
 .worries__item__third-area__btn--orange {
   flex-basis: 37%;
 }
-/*肩こり*/
-.worries__main-image--shoulder {
-  background-image: url("img/section-worries/main-img/worries-shoulderx1.png");
-}
-/*腰痛*/
-.worries__main-image--waist {
-  background-image: url("img/section-worries/main-img/worries-weistx1.png");
-}
-/*猫背*/
-.worries__main-image--hunched-back {
-  background-image: url("img/section-worries/main-img/worries-hunched-backx1.png");
-}
-/*冷え・むくみ*/
-.worries__main-image--cold {
-  background-image: url("img/section-worries/main-img/worries-coldx1.png")
-}
-/*下半身太り*/
-.worries__main-image--fat {
-  background-image: url("img/section-worries/main-img/worries-fatx1.png");
-}
+
 /*フローセクション*/
 .flow {
   background-color: #ECFBFF;
   padding: 60px 0;
+}
+.flow__wrapper{
+width: 77.8%;
+max-width: 1120px;
+margin: 0 auto;
+text-align: center;
 }
 .flow__title__main {
   display: flex;
@@ -522,21 +581,33 @@ ul li.worries__item:nth-child(even) {
 }
 .flow__bring__content {
   margin: 20px 0 50px;
+  text-align: left;
+  line-height: 1.5;
 }
-/**/
-.flow__bring ul li {
-  list-style-position: inside;
+/*リストスタイルの黒丸の画像と、文字が改行時に周りこまないようにする指定*/
+.flow__bring__content li {
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+}
+.flow__bring__content li::before {
+  content: url("img/section-flow/circlex1.png");
+  margin: 0 8px 0 0;
 }
 .flow__bring__content li {
-  list-style: url("img/section-flow/circlex1.png");
   font-size: 1.6rem;
 }
 .flow__banner {
+  width: 82.8%;
+  max-width: 928px;
   text-align: center;
-  margin-bottom: 50px;
+  margin: 0 auto 50px;
+}
+.flow__banner img{
+width: 100%;
 }
 .flow__btn {
-  margin: 50px 0 50px;
+  margin: 50px auto 50px;
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-end;
@@ -548,6 +619,10 @@ ul li.worries__item:nth-child(even) {
 .flow__btn--orange {
   flex-basis: 37%;
 }
+.mobile__btn {
+  display: none;
+  z-index: 100;
+}
 .footer {
   text-align: center;
 }
@@ -557,7 +632,7 @@ ul li.worries__item:nth-child(even) {
   margin: 65px 0 15px;
 }
 /*ここからmobile*/
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .hero {
     width: 100%;
     min-height: 358px;
@@ -573,6 +648,14 @@ ul li.worries__item:nth-child(even) {
     width: 70px;
     margin: 20px 0 -20px;
   }
+  .hero__title{
+  padding: 55% 30% 5% 11%;
+  width: 80%;
+  }
+  .hero__title img{
+  width: 100%;
+  }
+  /*
   .hero__title {
     color: #1fc2ed;
     width: 30%;
@@ -600,24 +683,25 @@ ul li.worries__item:nth-child(even) {
   .hero__title p {
     margin: 0px;
   }
-  .hero__title__h2 {
+  .hero__title {
     margin-top: -10px;
   }
-  .hero__title__h2 h2 {
+  .hero__title {
     background-color: #fcff00;
     padding: 6px 20px;
     text-align: center;
   }
-  .hero__title__h2--upper {
+  .hero__title--upper {
     font-size: 1.3rem;
     line-height: 1.5;
     margin: 8px 0 3px 0;
   }
-  .hero__title__h2--Under {
+  .hero__title--Under {
     font-size: 1.7rem;
     line-height: 1.5;
     margin-top: 0px;
   }
+  */
   .hero__btn {
     display: none;
   }
@@ -688,8 +772,8 @@ ul li.worries__item:nth-child(even) {
     line-height: 1.5;
     font-weight: 500;
   }
-   .purpose__title__yellow br{
-  display: block;
+  .purpose__title__yellow br {
+    display: block;
   }
   .purpose__title__white {
     font-size: 2.8rem;
@@ -739,6 +823,7 @@ ul li.worries__item:nth-child(even) {
   }
   .worries__item__first-area__wrapper {
     max-width: 390px;
+    margin: 0 auto;
   }
   .worries__item__first-area, .worries__item__first-area--odd {
     display: flex;
@@ -812,24 +897,24 @@ ul li.worries__item:nth-child(even) {
     max-width: 91.8%;
     text-align: center;
     margin: 30px auto;
-    padding: 20px 0;
+    padding: 20px ;
     font-size: 1.8rem;
   }
-  .worries__item__first-area__textflame h5 {
+  .worries__item__first-area__textflame__right {
     flex-basis: 100%;
     padding-bottom: 0px;
     margin-bottom: 20px;
   }
   .worries__item__first-area__textflame__left__item {
-    min-width: 259px;
     text-align: left;
     margin: 0 auto;
     padding-bottom: 0px;
     line-height: 1.5;
   }
   .worries__item__second-area {
-    width: 100%;
+    width: 91.8;
     max-width: 358px;
+    text-align: center;
     margin: 30px auto;
   }
   .worries__ribbon-image {
@@ -911,6 +996,7 @@ ul li.worries__item:nth-child(even) {
   }
   .flow__item__wrapper li {
     margin-bottom: 10px;
+    min-width: 160px;/*フローのSTEPとテキストが重ならないようにmin指定*/
   }
   .flow__item__wrapper li:nth-child(even) {
     transform: rotate(90deg);
@@ -929,13 +1015,18 @@ ul li.worries__item:nth-child(even) {
   .flow__bring__content {
     margin: 20px 0 50px;
   }
-  /**/
-  .flow__bring ul li {
-    list-style-position: inside;
-  }
   .flow__bring__content li {
-    list-style: url("img/section-flow/circlex1.png");
     font-size: 1.6rem;
+  }
+  /*リストスタイルの文字を改行時に周りこまないようにする*/
+  .flow__bring__content li {
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+  }
+  .flow__bring__content li::before {
+    content: url("img/section-flow/circlex1.png");
+    margin: 0 8px 0 0;
   }
   .flow__banner {
     width: 100%;
@@ -948,6 +1039,26 @@ ul li.worries__item:nth-child(even) {
   }
   .flow__btn {
     display: none;
+  }
+  .mobile__btn {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: baseline;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .mobile__btn--pink {
+    flex-basis: 66.6%;
+  }
+  .mobile__btn--pink img, .mobile__btn--orange img {
+    width: 100%;
+    vertical-align: bottom;
+  }
+  .mobile__btn--orange {
+    flex-basis: 33.3%;
   }
   .footer {
     text-align: center;
