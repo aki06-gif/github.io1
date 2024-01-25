@@ -64,7 +64,7 @@ width: 100%;
 }
 */
 /*ボタンの表示設定:100%*//*ホバー時の変わる時間:0.3s*/
-img.hero__btn--pink, .hero__btn--orange, .worries__item__third-area__btn--pink, .worries__item__third-area__btn--orange,.flow__btn--pink,.flow__btn--orange{
+.hero__btn--pink img, .hero__btn--orange img, .worries__item__third-area__btn--pink img, .worries__item__third-area__btn--orange img,.flow__btn--pink img,.flow__btn--orange img{
   width: 100%;
   transition: 0.3s;
 }
@@ -74,6 +74,8 @@ img.hero__btn--pink, .hero__btn--orange, .worries__item__third-area__btn--pink, 
 }
 
 .hero__btn {
+text-align: center;
+margin: 0 auto;
   padding: 100px 0 70px 0;
   display: flex;
   align-items: flex-end;
